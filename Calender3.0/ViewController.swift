@@ -176,8 +176,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             cell.isHidden = true
         }
         // show the weekdays in different colors
-        switch indexPath.row {
-        case 5,16,12,13,19,20,26,27,33,34:
+        switch indexPath.row { //weekend days color
+        case 5,6,12,13,19,20,26,27,33,34:
             if Int(cell.dateLabel.text!)! > 0 {
                 cell.dateLabel.textColor = UIColor.lightGray
             }
